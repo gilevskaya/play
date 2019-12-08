@@ -1,0 +1,20 @@
+{
+  "name": "antlr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsnd --no-notify src/index.ts",
+    "antlr4ts": "antlr4ts src/grammar/Json.g4"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "antlr4": "^4.7.2",
+    "antlr4ts": "^0.5.0-alpha.3"
+  },
+  "devDependencies": {
+    "antlr4ts-cli": "^0.5.0-alpha.3"
+  }
+}
