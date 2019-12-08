@@ -3,8 +3,8 @@ grammar Test;
 expr: OPEN expr CLOSE | A
 
 A: 'a';
-fragment OPEN: '(';
-fragment CLOSE: ')';
+OPEN: '(';
+CLOSE: ')';
 
 // ----------------------
 
