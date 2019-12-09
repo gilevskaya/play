@@ -1,0 +1,46 @@
+#MyTable {
+  color: green;
+  width: 100%;
+  border-spacing: 0;
+  border: 1px solid black;
+
+  th {
+    text-align: left;
+    color: blue;
+  }
+
+  tr {
+    &:last-child {
+      td {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  th,
+  td {
+    margin: 0;
+    padding: 0.5rem;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+}
+
+.Editable {
+  box-sizing: border-box;
+  min-width: 100px;
+  cursor: pointer;
+
+  input {
+    width: 100%;
+    outline: none;
+    border: 1px solid gray;
+    font-size: 1rem;
+    padding: 0;
+    margin-right: 5px;
+  }
+}
