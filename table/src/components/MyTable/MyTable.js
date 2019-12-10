@@ -1,7 +1,7 @@
 import React from "react";
 import { useTable } from "react-table";
 
-import "./MyTable.scss";
+import styles from "./MyTable.module.scss";
 
 // https://codesandbox.io/s/github/tannerlinsley/react-table/tree/master/examples/editable-data
 
@@ -18,7 +18,7 @@ const Editable = ({ value: initialValue, onChange }) => {
 
   return (
     <div
-      className="Editable"
+      className={styles.Editable}
       onClick={() => {
         if (!isEdit) setIsEdit(true);
       }}
@@ -62,7 +62,7 @@ export const MyTable = ({ data, onUpdate }) => {
 
   // get*Props below generates a unique component key
   return (
-    <table id="MyTable">
+    <table id={styles.MyTable}>
       <thead>
         <tr>
           {headers.map(column => (
