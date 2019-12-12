@@ -28,7 +28,7 @@ export const OrderBook = () => {
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "100px 100px 100px"
+          gridTemplateColumns: "6rem 6rem 6rem"
         }}
       >
         {asks &&
@@ -40,11 +40,11 @@ export const OrderBook = () => {
             </>
           ))}
       </div>
-      <div>--------------------</div>
+      <div>------------------------</div>
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "100px 100px 100px"
+          gridTemplateColumns: "6rem 6rem 6rem"
         }}
       >
         {bids &&
