@@ -54,12 +54,25 @@ const COLUMNS = Object.freeze([
 ]);
 
 export const MyTable = ({ data, onUpdate }) => {
+  console.time("my-time");
+  console.group("my group");
+  console.count("rendering-table");
+  console.log(
+    "some %ccss test",
+    "background: green; color: white; font-size: x-large;"
+  );
+  console.groupEnd();
+
+  console.log("not a group anymore, but here is an assertion");
+  console.assert(4 % 2 === 0, "assert failed, even");
+  console.assert(4 % 2 === 1, "assert failed, odd");
   const { headers, rows, prepareRow } = useTable({
     columns: COLUMNS,
     data,
     onUpdate
   });
-
+  console.trace();
+  console.timeEnd("my-time");
   // get*Props below generates a unique component key
   return (
     <table id={styles.MyTable}>
