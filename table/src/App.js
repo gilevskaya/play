@@ -68,6 +68,8 @@ let DATA = [
   }
 ];
 
+console.table(DATA);
+
 function App() {
   return (
     <div
